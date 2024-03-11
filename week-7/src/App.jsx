@@ -18,15 +18,10 @@ function App() {
 function IfEven() {
   const even = useRecoilValue(evenNumberSelector);
 
-  if(even) {
-    return <div>
-      It is an even number
-    </div>
-  } else {
-    return <div>
-      
-    </div>
-  }
+  
+  return <div>
+    {even ? "It is even" : null}
+  </div>
 }
 
 function Count() {
